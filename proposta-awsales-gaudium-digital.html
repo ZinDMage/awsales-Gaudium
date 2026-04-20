@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awsales & Gaudium Digital — Proposta Comercial</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+  :root{--brand:#0A7AFF;--brand-light:#3D9AFF;--dark:#07070D;--dark-2:#0E0E18;--cream:#FDFBF7;--cream-2:#FAF8F3;--ink:#111827;--ink-2:#1F2937;--ink-3:#374151;--ink-muted:#6B7280;--ink-light:#9CA3AF;--gold:#C9A84C;--gold-light:#D4B968;--white:#FFFFFF;--green:#00C48C;--green-bg:rgba(0,196,140,.06);--red:#FF3B5C;--border:#E5E7EB;--border-light:#F3F4F6;--radius:16px;--radius-sm:12px;--radius-xs:8px;--shadow-xs:0 1px 2px rgba(0,0,0,.04);--shadow-md:0 4px 16px rgba(0,0,0,.08)}
+  *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;color:var(--ink-3);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  [contenteditable="true"]{outline:none;border-radius:4px;transition:box-shadow .2s,background .2s;cursor:text}[contenteditable="true"]:hover{box-shadow:0 0 0 2px rgba(10,122,255,.12)}[contenteditable="true"]:focus{box-shadow:0 0 0 2px var(--brand);background:rgba(10,122,255,.02)}
+  .hero{background:linear-gradient(160deg,#07070D 0%,#0E1028 40%,#0A0A1A 100%);color:var(--white);padding:72px 24px 64px;position:relative;overflow:hidden;min-height:90vh;display:flex;align-items:center;justify-content:center}.hero::before{content:'';position:absolute;top:-30%;right:-15%;width:700px;height:700px;background:radial-gradient(circle,rgba(10,122,255,.1) 0%,transparent 65%);pointer-events:none}.hero::after{content:'';position:absolute;bottom:-20%;left:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(0,196,140,.06) 0%,transparent 65%);pointer-events:none}.hero-inner{max-width:780px;width:100%;position:relative;z-index:1}.hero-confidential{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:40px;font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:28px}.hero-confidential-dot{width:5px;height:5px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}.hero-logo{font-size:18px;font-weight:700;letter-spacing:-.3px;color:rgba(255,255,255,.85);margin-bottom:48px}.hero-logo span{color:var(--brand)}.hero h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(34px,7vw,60px);font-weight:800;line-height:1.06;letter-spacing:-2px;margin-bottom:20px}.hero h1 em{font-style:italic;color:var(--gold-light)}.hero-sub{font-size:clamp(14px,2.2vw,17px);color:rgba(255,255,255,.42);max-width:540px;line-height:1.75}.hero-meta{margin-top:48px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding-top:28px;border-top:1px solid rgba(255,255,255,.07)}.hero-meta-item{display:flex;flex-direction:column;gap:4px}.hero-meta-label{font-size:10px;text-transform:uppercase;letter-spacing:1.8px;color:rgba(255,255,255,.25);font-weight:600}.hero-meta-value{font-size:13px;color:rgba(255,255,255,.7);font-weight:500}
+  .section{padding:80px 24px}.section-alt{background:var(--cream)}.inner{max-width:780px;margin:0 auto;position:relative;z-index:1}.section-tag{display:inline-flex;align-items:center;gap:10px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2.5px;color:var(--brand);margin-bottom:16px}.section-tag::before{content:'';width:24px;height:1px;background:currentColor}.section-tag.gold{color:var(--gold)}.section-tag.green{color:var(--green)}.section-tag.red{color:var(--red)}.section h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(26px,5.5vw,46px);font-weight:800;color:var(--ink);letter-spacing:-1.2px;line-height:1.12;margin-bottom:16px}.section h2 em{font-style:italic;color:var(--ink-2)}.section-desc{font-size:clamp(14px,1.8vw,16px);color:var(--ink-muted);max-width:560px;line-height:1.8;margin-bottom:48px}
+  .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.pillar{padding:32px 24px;background:var(--white);border:1px solid var(--border);border-radius:var(--radius-sm);transition:box-shadow .25s,transform .25s}.pillar:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}.pillar-num{font-size:32px;font-weight:800;color:var(--brand);opacity:.3;font-family:'Playfair Display',serif;margin-bottom:16px}.pillar h3{font-size:16px;font-weight:700;color:var(--ink);margin-bottom:4px}.pillar .pillar-sub{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1.5px;color:var(--ink-light);margin-bottom:12px}.pillar p{font-size:13.5px;color:var(--ink-muted);line-height:1.7}
+  .scope-list{display:grid;grid-template-columns:1fr;gap:16px;margin-top:8px}.scope-item{display:flex;gap:20px;padding:24px;background:var(--white);border:1px solid var(--border);border-radius:var(--radius-sm)}.scope-num{font-size:18px;font-weight:800;color:var(--brand);opacity:.5;flex-shrink:0;padding-top:2px}.scope-item h4{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:4px}.scope-item p{font-size:13.5px;color:var(--ink-muted);line-height:1.65}
+  .tech-list{display:grid;grid-template-columns:1fr;gap:12px}.tech-item{display:flex;gap:16px;padding:20px 24px;background:var(--cream);border-radius:var(--radius-xs);align-items:flex-start}.tech-arrow{font-size:16px;color:var(--brand);font-weight:700;flex-shrink:0;padding-top:1px}.tech-item h4{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:4px}.tech-item p{font-size:13.5px;color:var(--ink-muted);line-height:1.65}
+  .guarantee-section{padding:80px 24px;background:var(--cream)}.guarantee-wrap{max-width:960px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:60px}.guarantee-card{background:linear-gradient(165deg,#1A1A30 0%,#12121F 50%,#0D0D18 100%);border-radius:16px;padding:52px 48px;max-width:460px;width:100%;position:relative;overflow:hidden;flex-shrink:0}.guarantee-card::before{content:'';position:absolute;top:-30%;right:-20%;width:400px;height:400px;background:radial-gradient(circle,rgba(255,255,255,.03) 0%,transparent 60%);pointer-events:none}.guarantee-card .section-tag{color:var(--green);margin-bottom:20px;position:relative;z-index:1}.guarantee-card .section-tag::before{background:var(--green)}.guarantee-card h2{color:var(--white);position:relative;z-index:1;font-size:clamp(30px,4.5vw,44px);line-height:1.08;letter-spacing:-1.2px}.guarantee-card .g-desc{font-size:14.5px;color:rgba(255,255,255,.38);line-height:1.75;margin:18px 0 32px;position:relative;z-index:1}.g-items{display:flex;flex-direction:column;gap:10px;position:relative;z-index:1}.g-item{display:flex;gap:14px;padding:16px 18px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:10px;align-items:flex-start}.g-item-icon{width:30px;height:30px;border-radius:50%;border:1.5px solid rgba(201,168,76,.45);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--gold)}.g-item-icon svg{width:13px;height:13px}.g-item h4{font-size:14px;font-weight:700;color:var(--white);margin-bottom:3px}.g-item p{font-size:13px;color:rgba(255,255,255,.35);line-height:1.55}.guarantee-shield{display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0}.shield-svg{width:200px;height:220px;margin-bottom:24px}.g-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:var(--ink-muted);text-align:center}.g-val{font-family:'Playfair Display',Georgia,serif;font-size:17px;font-style:italic;color:var(--ink-2);text-align:center;margin-top:4px}
+  .pricing-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.pricing-card{padding:32px 28px;background:var(--white);border:1px solid var(--border);border-radius:var(--radius);transition:box-shadow .25s}.pricing-card:hover{box-shadow:var(--shadow-md)}.pricing-label{font-size:12px;font-weight:600;color:var(--ink-muted);margin-bottom:16px}.pricing-val{font-size:clamp(28px,5vw,38px);font-weight:800;color:var(--ink);font-family:'Playfair Display',serif;margin-bottom:4px}.pricing-val span{font-size:14px;font-weight:500;color:var(--ink-light)}.pricing-note{font-size:13px;color:var(--ink-muted);line-height:1.65;margin-top:12px}
+  .timeline{display:grid;grid-template-columns:1fr;gap:0}.tl-item{display:flex;gap:20px;padding:24px 0;border-bottom:1px solid var(--border)}.tl-item:last-child{border-bottom:none}.tl-badge{min-width:56px;height:56px;border-radius:var(--radius-sm);background:rgba(10,122,255,.05);color:var(--brand);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;flex-shrink:0}.tl-badge strong{font-size:14px;letter-spacing:0}.tl-content h4{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:4px}.tl-content .tl-phase{font-size:11px;font-weight:600;color:var(--brand);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}.tl-content p{font-size:13.5px;color:var(--ink-muted);line-height:1.6}
+  .stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:40px 0}.stat-card{text-align:center;padding:28px 16px;background:var(--white);border:1px solid var(--border);border-radius:var(--radius-sm)}.stat-val{font-size:42px;font-weight:800;color:var(--ink);font-family:'Playfair Display',serif;line-height:1}.stat-val span{color:var(--brand);font-size:22px}.stat-lbl{font-size:12px;color:var(--ink-muted);margin-top:8px}.client-tags-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--ink-light);margin-bottom:14px}.client-tags{display:flex;flex-wrap:wrap;gap:8px}.client-tag{padding:8px 18px;background:var(--cream);border:1px solid var(--border);border-radius:40px;font-size:13px;font-weight:500;color:var(--ink-2)}
+  .resp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.resp-card{padding:28px 24px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--white)}.resp-card h3{font-size:16px;font-weight:700;color:var(--ink);margin-bottom:16px}.resp-line{font-size:14px;color:var(--ink-muted);line-height:1.65;padding:8px 0;border-bottom:1px solid var(--border-light)}.resp-line:last-child{border-bottom:none}
+  .steps-list{display:grid;grid-template-columns:1fr;gap:12px}.step-card{display:flex;gap:16px;padding:20px 24px;background:var(--cream);border:1px solid var(--border);border-radius:var(--radius-sm);align-items:flex-start}.step-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px}.step-icon.blue{background:rgba(10,122,255,.08);color:var(--brand)}.step-icon.green{background:rgba(0,196,140,.08);color:var(--green)}.step-title{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:3px}.step-desc{font-size:13px;color:var(--ink-muted);line-height:1.6}.reminder{margin-top:28px;padding:18px 24px;background:var(--green-bg);border:1px solid rgba(0,196,140,.12);border-radius:var(--radius-xs);font-size:14px;color:var(--ink-muted);line-height:1.65}.reminder strong{color:var(--ink)}
+  .cta-section{padding:80px 24px;background:linear-gradient(160deg,#07070D 0%,#0E1028 40%,#0A0A1A 100%);color:var(--white);position:relative;overflow:hidden;text-align:center}.cta-section::before{content:'';position:absolute;top:-30%;left:50%;transform:translateX(-50%);width:600px;height:600px;background:radial-gradient(circle,rgba(10,122,255,.08) 0%,transparent 65%);pointer-events:none}.cta-inner{max-width:600px;margin:0 auto;position:relative;z-index:1}.cta-pre{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,.3);margin-bottom:16px}.cta-section h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(24px,5vw,40px);font-weight:800;color:var(--white);letter-spacing:-1px;line-height:1.12;margin-bottom:16px}.cta-section h2 em{font-style:italic;color:rgba(255,255,255,.6)}.cta-desc{font-size:15px;color:rgba(255,255,255,.4);line-height:1.7;margin-bottom:40px}.cta-contact{display:flex;flex-direction:column;align-items:center;gap:4px;margin-bottom:8px}.cta-name{font-size:17px;font-weight:700;color:var(--white)}.cta-role{font-size:13px;color:rgba(255,255,255,.4)}.cta-links{display:flex;justify-content:center;gap:24px;margin-top:16px}.cta-link{display:flex;flex-direction:column;align-items:center;gap:2px}.cta-link-val{font-size:13px;font-weight:600;color:var(--brand-light)}.cta-link-label{font-size:10px;color:rgba(255,255,255,.25);text-transform:uppercase;letter-spacing:1px}.footer{padding:24px;text-align:center;font-size:11px;color:rgba(255,255,255,.2);background:var(--dark);border-top:1px solid rgba(255,255,255,.04)}
+  @media(max-width:768px){.hero{padding:56px 20px 48px;min-height:auto}.hero h1{font-size:clamp(28px,9vw,42px)}.hero-meta{grid-template-columns:repeat(2,1fr);gap:16px}.pillars{grid-template-columns:1fr}.guarantee-wrap{flex-direction:column;gap:40px}.guarantee-card{max-width:100%;padding:40px 28px}.shield-svg{width:160px;height:176px}.pricing-grid{grid-template-columns:1fr}.stats-row{grid-template-columns:1fr}.resp-grid{grid-template-columns:1fr}.section{padding:56px 18px}.cta-links{flex-direction:column;gap:12px}}
+</style>
+</head>
+<body>
+
+<section class="hero"><div class="hero-inner">
+  <div class="hero-confidential"><div class="hero-confidential-dot"></div> Proposta Comercial Confidencial</div>
+  <div class="hero-logo">Aw<span>sales</span></div>
+  <h1 contenteditable="true">Recuperação de Vendas com IA para a <em>Gaudium Digital.</em></h1>
+  <p class="hero-sub" contenteditable="true">4.200 leads qualificados do lançamento do Dr. Igor — médicos de alta renda — aguardando abordagem. A WCS converte essa base em receita com agentes autônomos e custo variável por resultado.</p>
+  <div class="hero-meta">
+    <div class="hero-meta-item"><span class="hero-meta-label">Preparado para</span><span class="hero-meta-value" contenteditable="true">Moisés Galan</span></div>
+    <div class="hero-meta-item"><span class="hero-meta-label">Data</span><span class="hero-meta-value" contenteditable="true">16 de Abril, 2026</span></div>
+    <div class="hero-meta-item"><span class="hero-meta-label">Validade</span><span class="hero-meta-value" contenteditable="true">30 dias</span></div>
+    <div class="hero-meta-item"><span class="hero-meta-label">Responsável</span><span class="hero-meta-value" contenteditable="true">Arthur Betônico</span></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="inner">
+  <div class="section-tag gold">Tecnologia Proprietária</div>
+  <h2 contenteditable="true">Três pilares da plataforma <em>AURA.</em></h2>
+  <p class="section-desc" contenteditable="true">Desenvolvida para o contexto de infoprodutores e lançamentos de alto ticket — com integrações nativas à Hotmart e WhatsApp API Oficial, e agentes que se auto-otimizam com cada conversa.</p>
+  <div class="pillars">
+    <div class="pillar"><div class="pillar-num">01</div><h3 contenteditable="true">Agent Builder</h3><div class="pillar-sub">Construtor</div><p contenteditable="true">A base de conhecimento é construída a partir das páginas de venda, VSLs, áudios e histórico de conversas do Dr. Igor. Os agentes absorvem o método, o produto e as objeções reais do público médico antes do primeiro disparo.</p></div>
+    <div class="pillar"><div class="pillar-num">02</div><h3 contenteditable="true">Execution Engine</h3><div class="pillar-sub">Motor</div><p contenteditable="true">Integração nativa com Hotmart (compra aprovada, carrinho abandonado, Pix gerado, cartão recusado) e API Oficial do WhatsApp. Orquestra múltiplos agentes no mesmo número, com transbordo para humano no fechamento.</p></div>
+    <div class="pillar"><div class="pillar-num">03</div><h3 contenteditable="true">Optimization Brain</h3><div class="pillar-sub">Cérebro · Maior Diferencial</div><p contenteditable="true">Smart Follow-up autônomo que cria sua própria cadência com base no perfil de cada lead médico, raciocina sobre o ponto de parada da conversa e gera templates personalizados. A base de conhecimento cresce com cada objeção respondida.</p></div>
+  </div>
+</div></section>
+
+<section class="section section-alt"><div class="inner">
+  <div class="section-tag">Escopo da Solução</div>
+  <h2 contenteditable="true">Três agentes para o funil do <em>Dr. Igor.</em></h2>
+  <p class="section-desc" contenteditable="true">Desenhados para atuar em todas as etapas do lançamento — do onboarding de compra aprovada à recuperação dos 4.200 leads que não converteram.</p>
+  <div class="scope-list">
+    <div class="scope-item"><div class="scope-num">1.</div><div><h4 contenteditable="true">Launch Concierge (Agente de Onboarding)</h4><p contenteditable="true">Ativado automaticamente na compra aprovada via Hotmart. Dá boas-vindas, qualifica o lead, engaja na pesquisa de perfil e eleva o nível de consciência do aluno para aumentar o show-up nas lives. Histórico comprovado: +67% de comparecimento no case Betina.</p></div></div>
+    <div class="scope-item"><div class="scope-num">2.</div><div><h4 contenteditable="true">Recovery Agent (Agente de Recuperação de Vendas)</h4><p contenteditable="true">Aborda os 4.200 leads da base que não compraram no lançamento via API Oficial do WhatsApp. Cria cadência inteligente de follow-up respeitando a agenda de médicos (ciclos de ~10 dias), faz qualificação e transfere para humano apenas no fechamento ou em objeções complexas.</p></div></div>
+    <div class="scope-item"><div class="scope-num">3.</div><div><h4 contenteditable="true">Objection Annihilator (Aniquilador de Objeções)</h4><p contenteditable="true">Agente especializado em leads quentes travados por preço, tempo ou falta de confiança. Constrói ofertas de fechamento personalizadas, aciona argumentos de autoridade do Dr. Igor e acelera a decisão de compra com abordagem objetiva, sem pressão excessiva.</p></div></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="inner">
+  <div class="section-tag">Entrega Técnica</div>
+  <h2 contenteditable="true">O que está incluso na <em>implantação.</em></h2>
+  <p class="section-desc" contenteditable="true">Do mapeamento ao Go-Live em 7 dias, conduzido pelo time de engenharia e pelo Account Manager Lucas, especialista dedicado a infoprodutores.</p>
+  <div class="tech-list">
+    <div class="tech-item"><div class="tech-arrow">→</div><div><h4 contenteditable="true">Construção da Base de Conhecimento</h4><p contenteditable="true">Ingestão das páginas de venda, VSLs, áudios e histórico de conversas do Dr. Igor. Os agentes aprendem o método, os produtos (R$5k–R$15k), as objeções do público médico e o processo de vendas antes do primeiro disparo.</p></div></div>
+    <div class="tech-item"><div class="tech-arrow">→</div><div><h4 contenteditable="true">Integração Nativa Hotmart</h4><p contenteditable="true">Conexão direta com os endpoints de compra aprovada, carrinho abandonado, Pix gerado e cartão recusado. Os agentes também acessam a área de membros para convites de renovação, sem prospectar alunos existentes.</p></div></div>
+    <div class="tech-item"><div class="tech-arrow">→</div><div><h4 contenteditable="true">Infraestrutura WhatsApp API Oficial</h4><p contenteditable="true">Suporte completo como Meta Tech Provider para ativação e aprovação de templates. Todos os disparos de recuperação de vendas via API Oficial — sem dependência de ferramentas de disparo externas. Múltiplos agentes operando no mesmo número.</p></div></div>
+    <div class="tech-item"><div class="tech-arrow">→</div><div><h4 contenteditable="true">Segmentação de Leads por Faixa</h4><p contenteditable="true">Classificação de leads em Faixa A, B e C com base em formulários e pesquisas de qualificação, permitindo abordagem diferenciada por nível de consciência e probabilidade de compra.</p></div></div>
+    <div class="tech-item"><div class="tech-arrow">→</div><div><h4 contenteditable="true">Dashboards de Performance e Testes A/B</h4><p contenteditable="true">Acompanhamento em tempo real de faturamento bruto, investimento total, margem e ROAS por campanha. Comparação entre IAs para otimização contínua da conversão e redução do custo por conversa ao longo do tempo.</p></div></div>
+  </div>
+</div></section>
+
+<section class="guarantee-section"><div class="guarantee-wrap">
+  <div class="guarantee-card">
+    <div class="section-tag green">Risco Zero</div>
+    <h2>Money-Back<br>Guarantee.</h2>
+    <p class="g-desc" contenteditable="true">Se a WCS não entregar ROAS positivo nas campanhas de recuperação de vendas, os custos variáveis são integralmente isentos.</p>
+    <div class="g-items">
+      <div class="g-item"><div class="g-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div><div><h4 contenteditable="true">Garantia de ROAS Positivo</h4><p contenteditable="true">Zero custo variável se a campanha de recuperação não gerar retorno superior ao investimento.</p></div></div>
+      <div class="g-item"><div class="g-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div><div><h4 contenteditable="true">Escalabilidade por Resultado</h4><p contenteditable="true">Volume de disparos cresce conforme a conversão e o ROI forem validados nos dashboards em tempo real.</p></div></div>
+      <div class="g-item"><div class="g-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div><div><h4 contenteditable="true">Compromisso Contratual</h4><p contenteditable="true">A garantia é formalizada em contrato. Se o ROAS não for positivo, nenhum valor variável é cobrado.</p></div></div>
+    </div>
+  </div>
+  <div class="guarantee-shield">
+    <svg class="shield-svg" viewBox="0 0 200 230" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="100,12 175,48 175,155 100,195 25,155 25,48" fill="none" stroke="#C0B8A0" stroke-width=".7" opacity=".3"/><circle cx="24" cy="120" r="3" fill="#90A8C0" opacity=".5"/><circle cx="176" cy="100" r="3" fill="#90A8C0" opacity=".5"/><circle cx="100" cy="192" r="2.5" fill="#90A8C0" opacity=".35"/><path d="M100,38 C100,38 158,56 166,60 C166,118 157,162 100,190 C43,162 34,118 34,60 C42,56 100,38 100,38Z" fill="url(#s1ct)" stroke="#B8A870" stroke-width="1" opacity=".85"/><path d="M100,50 C100,50 148,65 155,68 C155,118 147,155 100,180 C53,155 45,118 45,68 C52,65 100,50 100,50Z" fill="url(#s2ct)" opacity=".4"/><ellipse cx="100" cy="108" rx="30" ry="34" fill="url(#s3ct)" opacity=".5"/><circle cx="100" cy="104" r="24" fill="#00C48C" opacity=".12"/><circle cx="100" cy="104" r="16" fill="#00C48C" opacity=".2"/><polyline points="91,104 97,111 111,96" fill="none" stroke="#00C48C" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/><defs><radialGradient id="s1ct" cx="50%" cy="35%" r="65%"><stop offset="0%" stop-color="#EDE8D4"/><stop offset="100%" stop-color="#C8C0A8"/></radialGradient><radialGradient id="s2ct" cx="50%" cy="38%" r="55%"><stop offset="0%" stop-color="#F5F0E0" stop-opacity=".6"/><stop offset="100%" stop-color="#D8D0BC" stop-opacity="0"/></radialGradient><radialGradient id="s3ct" cx="50%" cy="45%" r="50%"><stop offset="0%" stop-color="#E0DCC8" stop-opacity=".8"/><stop offset="100%" stop-color="#D0C8B0" stop-opacity="0"/></radialGradient></defs></svg>
+    <div class="g-label">GARANTIA CONTRATUAL</div>
+    <div class="g-val">ROAS positivo · 100% garantido</div>
+  </div>
+</div></section>
+
+<section class="section"><div class="inner">
+  <div class="section-tag">Investimento</div>
+  <h2 contenteditable="true">Modelo comercial <em>orientado a resultado.</em></h2>
+  <p class="section-desc" contenteditable="true">Mensalidade fixa pela tecnologia e equipe. Custo variável proporcional ao volume — vocês só pagam mais quando a IA trabalha mais.</p>
+  <div class="pricing-grid">
+    <div class="pricing-card">
+      <div class="pricing-label">Setup — Implantação (3 Agentes)</div>
+      <div class="pricing-val" contenteditable="true">R$ 10.500</div>
+      <div class="pricing-val"><span>pagamento único</span></div>
+      <p class="pricing-note" contenteditable="true">Construção dos 3 agentes (Launch Concierge, Recovery Agent e Objection Annihilator), ingestão da base de conhecimento do Dr. Igor, integração com Hotmart e WhatsApp API Oficial, e todas as validações antes do Go-Live.</p>
+    </div>
+    <div class="pricing-card">
+      <div class="pricing-label">Operação Mensal + Variável</div>
+      <div class="pricing-val" contenteditable="true">R$ 2.500</div>
+      <div class="pricing-val"><span>por mês + R$ 1,50 a R$ 5 por lead</span></div>
+      <p class="pricing-note" contenteditable="true">Inclui Account Manager Lucas (especialista em infoprodutores), equipe de suporte, manutenção e relatórios. Custo variável composto por: uso de IA por lead, API da Meta (direto na BM do cliente) e tokens LLM. Leads com decisão tomada têm custo mais baixo.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="section section-alt"><div class="inner">
+  <div class="section-tag">Cronograma</div>
+  <h2 contenteditable="true">7 dias para <em>Go-Live.</em></h2>
+  <p class="section-desc" contenteditable="true">Implementação acelerada — já na semana que o lançamento pago inicia a venda de ingressos.</p>
+  <div class="timeline">
+    <div class="tl-item"><div class="tl-badge"><span>Fase</span><strong>1</strong></div><div class="tl-content"><div class="tl-phase">Dia 1 — Onboarding</div><h4 contenteditable="true">Reunião de Onboarding e Insumos</h4><p contenteditable="true">Coleta de endpoints Hotmart, páginas de venda, VSLs, áudios do Dr. Igor, histórico de conversas e lista dos 4.200 leads. Mapeamento dos perfis de lead (Faixa A, B e C) e regras de abordagem.</p></div></div>
+    <div class="tl-item"><div class="tl-badge"><span>Fase</span><strong>2</strong></div><div class="tl-content"><div class="tl-phase">Dias 2 a 4</div><h4 contenteditable="true">Construção dos Agentes e Base de Conhecimento</h4><p contenteditable="true">Desenvolvimento dos 3 agentes com playbooks proprietários para o público médico, smart follow-up com cadência de ~10 dias e arquitetura multi-agente no mesmo número de WhatsApp.</p></div></div>
+    <div class="tl-item"><div class="tl-badge"><span>Fase</span><strong>3</strong></div><div class="tl-content"><div class="tl-phase">Dias 5 a 6</div><h4 contenteditable="true">Integrações e Validação</h4><p contenteditable="true">Conexão com Hotmart (todos os endpoints) e WhatsApp API Oficial. Testes de cenários reais de objeção com leads médicos, aprovação de templates Meta e simulação de fluxo completo.</p></div></div>
+    <div class="tl-item"><div class="tl-badge"><span>Fase</span><strong>4</strong></div><div class="tl-content"><div class="tl-phase">Dia 7</div><h4 contenteditable="true">Go-Live</h4><p contenteditable="true">3 agentes em produção com dashboards de ROAS, testes A/B ativos e monitoramento em tempo real. Recovery Agent inicia abordagem dos 4.200 leads.</p></div></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="inner">
+  <div class="section-tag">Track Record</div>
+  <h2 contenteditable="true">Resultados comprovados <em>em infoprodutos e enterprise.</em></h2>
+  <p class="section-desc" contenteditable="true">A WCS nasceu dentro de uma operação com 500.000+ alunos ativos e foi refinada para infoprodutores de alto ticket antes de expandir para o enterprise. A recomendação do Alfredo do G4 veio de resultado real.</p>
+  <div class="stats-row">
+    <div class="stat-card"><div class="stat-val">23<span>x</span></div><div class="stat-lbl">ROAS — case DAX (R$100k+)</div></div>
+    <div class="stat-card"><div class="stat-val">67<span>%</span></div><div class="stat-lbl">aumento de show-up — case Betina</div></div>
+    <div class="stat-card"><div class="stat-val">7<span>d</span></div><div class="stat-lbl">para Go-Live</div></div>
+  </div>
+  <div class="client-tags-label">Clientes que confiam na Awsales</div>
+  <div class="client-tags"><span class="client-tag">G4 Educação</span><span class="client-tag">Betina Dantas</span><span class="client-tag">Pablo Marçal</span><span class="client-tag">Maira Cardi</span><span class="client-tag">Wendel Carvalho</span><span class="client-tag">Tambasa Atacadistas</span><span class="client-tag">iFood</span></div>
+</div></section>
+
+<section class="section section-alt"><div class="inner">
+  <div class="section-tag">Responsabilidades</div>
+  <h2 contenteditable="true">Comprometimento <em>mútuo.</em></h2>
+  <p class="section-desc" contenteditable="true">Para garantir o Go-Live em 7 dias e o início da recuperação dos 4.200 leads.</p>
+  <div class="resp-grid">
+    <div class="resp-card"><h3>Awsales</h3><div class="resp-line" contenteditable="true">Onboarding completo e isento de taxas adicionais</div><div class="resp-line" contenteditable="true">Construção dos 3 agentes + base de conhecimento do Dr. Igor</div><div class="resp-line" contenteditable="true">Account Manager Lucas (especialista em infoprodutores) dedicado</div><div class="resp-line" contenteditable="true">Suporte Meta Tech Provider para ativação de WhatsApp API Oficial</div><div class="resp-line" contenteditable="true">Relatórios de ROAS, conversão e custo por lead</div></div>
+    <div class="resp-card"><h3>Gaudium Digital</h3><div class="resp-line" contenteditable="true">Fornecer endpoints Hotmart e acessos de integração</div><div class="resp-line" contenteditable="true">Disponibilizar lista dos 4.200 leads, páginas de venda e VSLs do Dr. Igor</div><div class="resp-line" contenteditable="true">Fornecer número WhatsApp para ativação da API Oficial</div><div class="resp-line" contenteditable="true">Garantir que a BM esteja sem histórico de banimento por listas frias</div><div class="resp-line" contenteditable="true">Validar os fluxos e aprovar a entrada em produção</div></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="inner">
+  <div class="section-tag green">Próximos Passos</div>
+  <h2 contenteditable="true">Decisão até <em>segunda-feira.</em></h2>
+  <div class="steps-list">
+    <div class="step-card"><div class="step-icon blue">▶</div><div><div class="step-title" contenteditable="true">Moisés alinha os investimentos com o especialista</div><div class="step-desc" contenteditable="true">Apresentar os custos de implantação (R$10.500 setup + R$2.500/mês + variável por lead) e alinhar as variáveis para o lançamento pago que inicia em uma semana.</div></div></div>
+    <div class="step-card"><div class="step-icon blue">▶</div><div><div class="step-title" contenteditable="true">Follow-up de Arthur na segunda-feira</div><div class="step-desc" contenteditable="true">Validação da proposta, esclarecimento de dúvidas e, se desejarem, demonstração do agente de IA para teste — número enviado junto com os cases de estudo.</div></div></div>
+    <div class="step-card"><div class="step-icon green">✓</div><div><div class="step-title" contenteditable="true">Go-Live em 7 dias após aprovação</div><div class="step-desc" contenteditable="true">Launch Concierge, Recovery Agent e Objection Annihilator operando em produção — integrados à Hotmart e com os 4.200 leads em abordagem ativa.</div></div></div>
+  </div>
+  <div class="reminder" contenteditable="true">Lembrete: se a WCS não entregar ROAS positivo nas campanhas de recuperação de vendas, <strong>nenhum custo variável é cobrado</strong>. O risco é todo nosso.</div>
+</div></section>
+
+<section class="cta-section"><div class="cta-inner">
+  <div class="cta-pre">Awsales · Service-as-a-Software</div>
+  <h2 contenteditable="true">4.200 leads esperando. <em>O momento é agora.</em></h2>
+  <p class="cta-desc" contenteditable="true">Cada semana sem abordagem é conversão perdida. O lançamento pago começa em uma semana — a WCS pode estar operando antes disso.</p>
+  <div class="cta-contact"><div class="cta-name" contenteditable="true">Arthur Betônico</div><div class="cta-role" contenteditable="true">Head of Sales · Awsales</div></div>
+  <div class="cta-links"><div class="cta-link"><div class="cta-link-val" contenteditable="true">arthur@awsales.io</div><div class="cta-link-label">E-mail de contato</div></div><div class="cta-link"><div class="cta-link-val" contenteditable="true">+55 31 99627-6090</div><div class="cta-link-label">WhatsApp</div></div></div>
+</div></section>
+
+<div class="footer">© 2026 Awsales by Aswork. Documento confidencial.</div>
+</body>
+</html>
